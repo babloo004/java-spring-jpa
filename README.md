@@ -81,10 +81,11 @@ These methods use DSL to define queries that will be converted into JPQL and exe
 This file contains configuration properties for the Spring Boot application. It includes settings for the H2 database and JPA.
 
 ```properties
+spring.application.name=RESTandJPA
+spring.datasource.url=jdbc:mysql://localhost:3306/springjpa
+spring.datasource.username=root
+spring.datasource.password=1234
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=password
 ```
